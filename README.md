@@ -15,11 +15,28 @@ Centre button - Cycles through watch faces.<br>
 All button choices are saved to settings<br>
 
 # Creating Watch Faces
-The watch faces are created using Grayscale Image Magic.<br>
+The watch faces are created using Image Grayscale Magic!.<br>
 A template for Adobe PhotoShop has been included in the Image Template folder.<br>
 The template is deesigned to display all 60 tick locations at the correct angle.<br>
 This template can be used to know where to place the ticks on image.<br>
 This is how I created all my watch faces.<br>
+
+# Image Grayscale Magic!
+Grayscale images can be colored dynamically with the fill property. The black area of an image will be fully transparent (0) and the white will be fully opaque (255). All the mid-gray areas will inherit opacity according to their depth of color (0 - 255).
+
+Note: The image must be 8-bit PNG format.</br>
+
+<svg></br>
+  <image width="100%" height="100%" href="hand.png" class="seconds" fill="#3fc0fc" opacity="1" /></br>
+</svg></br>
+
+Aside from making UI more adjustable to color changes, the use of grayscale images reduces the size memory usage by a factor of 4.
+
+You can generate images in the correct format by using the following; 
+
+ ImageMagick command: convert original.png -colorspace gray final.png
+
+ Adobe Photoshop set Image Mode > Grayscale, 8 Bits/Channel.
 
 # Fitbit SDK
 Fitbit SDK code to settingsStorage.setItem for diffrent items.<br>
