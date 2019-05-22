@@ -1,6 +1,6 @@
 # Simply-Analog
 Simply Analog is a simple watch face with multiple options.<br>
-<image="../Screenshots/SimplyAnalog.png></br>
+<img src="/Screenshots/SimplyAnalog.png" width="150" hight="150"><img src="/Screenshots/SimplyAnalog.png" width="150" hight="150"><img src="/Screenshots/SimplyAnalog.png" width="150" hight="150"><img src="/Screenshots/SimplyAnalog.png" width="150" hight="150"><img src="/Screenshots/SimplyAnalog.png" width="150" hight="150"></br>
 You can choose from 12 different watch faces.<br> 
 The most basic watch face is simple, but from there you can choose what is display, how it is displayed and what watch face you would like.<br>
 There are also 9 buttons on the watch face that allow you to display or hide status information.<br>
