@@ -1,1 +1,62 @@
+line {
+  stroke-linecap: round;
+}
 
+#mydate {
+  font-size: 30;
+  font-family: System-Regular;
+  text-anchor: middle;
+  text-length: 6;
+  x: 75%;
+  y: 160;
+}
+
+#mybatteryusage {
+  font-size: 30;
+  font-family: System-Regular;
+  text-anchor: middle;
+  text-length: 6;
+  x: 108;
+  y: 160;
+}
+
+#mystats {
+  font-size: 66;
+  font-family: System-Regular;
+  text-anchor: end;
+  text-length: 5;
+  y: 50%+25;
+}
+
+#mystatspm {
+  font-size: 26;
+  font-family: System-Regular;
+  text-anchor: start;
+  text-length: 2;
+  y: 50%-3;
+}
+
+#mystatssec {
+  font-size: 30;
+  font-family: System-Regular;
+  text-anchor: start;
+  text-length: 2;
+  y: 50%+25;
+}
+
+#myheartstats {
+  font-size: 30;
+  font-family: System-Regular;
+  text-anchor: middle;
+  text-length: 12;
+  y: 81%+10;
+}
+
+#mybatterystats {
+  font-size: 30;
+  font-family: System-Regular;
+  text-anchor: middle;
+  text-length: 4;
+  x: 78;
+  y: 28;
+}

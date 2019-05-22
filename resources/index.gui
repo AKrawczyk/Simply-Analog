@@ -1,0 +1,163 @@
+<svg viewport-fill="black">
+  <!-- Watchfaces -->
+  <g class="background1 backgroundface1" fill="black">
+    <image id="bkg" x="0" y="0" width="300" height="300" href="bkg_white.png" fill="inherit"/>
+    <image id="wfc1" x="0" y="0" width="300" height="300" href="bkg_black.png" fill="inherit"  class="clockcolor1 backgroundface1" />
+    <image id="wfc2" x="0" y="0" width="300" height="300" href="bkg_black.png" fill="#888888" class="clockcolor3 handcolor1" />
+  </g>
+  
+  
+  <!-- Status -->
+  <!-- Date --->
+  <g class="textcolor2" fill="#FFFFFF">
+    <text id="mydate" fill="inherit" class="date rings textcolor2" display="none"></text>
+  </g>
+  
+  
+  <!-- Battery -->
+  <g class="textcolor2" fill="#FFFFFF">
+    <text id="mybatteryusage" class="battery1 rings textcolor2" fill="inherit" display="none"></text>
+  </g>
+  
+  <svg id="batterygroup">
+    <g id="batterycolor" class="textcolor3 battery rings" fill="#888888" display="none">
+      <image id="batteryimg" x="39" y="134" width="32" height="32" href="ico_battery.png" fill="inherit" />
+    </g>
+
+    <g class="textcolor3 battery rings" fill="#888888" display="none">
+      <rect id="batteryusage" width="1" height="12" x="42" y="144" fill="inherit" />
+    </g>
+  </svg>
+  
+  
+  <!-- Steps -->
+  <svg id="stepsgroup">
+    <g id="stepscolor" class="stepscolor3 steps rings" fill="#0D730B" display="none">
+      <image x="100%-37" y="17" width="23" height="23" href="ico_steps.png" fill="inherit" />
+    </g>
+
+    <g fill="#888888" class="steps rings background2 backgroundface2" display="none">
+      <arc x="100%-51" y="1" width="50" height="50" fill="inherit" arc-width="6" start-angle="0" sweep-angle="270" />
+    </g>
+
+    <g id="steps" class="stepscolor2 steps rings" fill="#119E0E" display="none">
+      <arc x="100%-51" y="1" width="50" height="50" fill="inherit" arc-width="6" start-angle="0" sweep-angle="0" id="today_tr" />
+      <text id="mystepstats" class="textcolor1" x="100%-27" y="21" font-size="26" font-family="System-Regular" text-anchor="end" text-length="6" fill="white" ></text>
+    </g>
+  </svg>
+  
+  
+  <!-- Calories -->
+  <svg id="cal">
+    <g id="caloriescolor" class="caloriescolor3 calories rings" fill="#32547a" display="none">
+      <image x="14" y="19" width="23" height="23" href="ico_cal.png" fill="inherit" />
+    </g>
+
+    <g id="caloriesgoal" fill="#888888" class="calories rings background2 backgroundface2" display="none">
+      <arc x="1" y="1" width="50" height="50" fill="inherit" arc-width="6" start-angle="90" sweep-angle="270" />
+    </g>
+
+    <g id="calories" class="caloriescolor2 calories rings" fill="#DD7F23" display="none">
+      <arc x="1"y="1" width="50" height="50" fill="inherit" arc-width="6" start-angle="90" sweep-angle="0" id="today_tl" />
+      <text id="mycaloriestats" class="textcolor1" x="30" y="21" font-size="26" font-family="System-Regular" text-anchor="start" text-length="6" fill="white"></text>
+    </g>
+  </svg>
+  
+  
+  <!-- Activity -->
+  <svg id="activitygroup">
+    <g id="activitycolor" class="activitycolor3 activity rings" fill="#32547a" display="none">
+      <image id="floors" x="14" y="100%-41" width="23" height="23" href="ico_climb.png" fill="inherit"/>
+    </g>
+
+    <g fill="#888888" class="activity rings background2 backgroundface2" display="none">
+      <arc x="1" y="100%-51" width="50" height="50" fill="inherit" arc-width="6" start-angle="180" sweep-angle="270"/>
+    </g>
+
+    <g id="activity" class="activitycolor2 activity rings" fill="#5682b4" display="none">
+      <arc x="1" y="100%-51" width="50" height="50" fill="inherit" arc-width="6" start-angle="180" sweep-angle="0" id="today_bl" />
+      <text id="myactivitystats" class="textcolor1" x="30" y="100%-3" font-size="26" font-family="System-Regular" text-anchor="start" text-length="6" fill="white"></text>
+    </g>
+  </svg>
+  
+  
+  <!-- Distance -->
+  <svg id="distancegroup">
+    <g id="distancecolor" class="distancecolor3 distance rings" fill="#79327A" display="none">
+      <image x="100%-37" y="100%-42" width="23" height="23" href="ico_dist.png" fill="inherit" />
+    </g>
+
+    <g fill="#888888" class="distance rings background2 backgroundface2" display="none">
+      <arc x="100%-51" y="100%-51" width="50" height="50" fill="inherit" arc-width="6" start-angle="270" sweep-angle="270" />
+    </g>
+
+    <g id="distance" class="distancecolor2 distance rings" fill="#B455B5" display="none">
+      <arc x="100%-51" y="100%-51" width="50" height="50" fill="inherit" arc-width="6" start-angle="270" sweep-angle="0" id="today_br" />
+      <text id="mydistancestats" class="textcolor1" x="100%-28" y="100%-3" font-size="26" font-family="System-Regular" text-anchor="end" text-length="6" fill="white"></text>
+    </g>
+  </svg>
+  
+  
+  <!-- Heartrate -->
+  <g id="heartrate" class="heartratecolor2 heartrate rings" fill="#CC4848" display="none">
+    <arc x="50%-35" y="55%+30" width="70" height="70" arc-width="4" start-angle="0" sweep-angle="360" fill="inherit" id="today_hr" />
+    <text id="myheartstats" class="textcolor1" x="50%" fill="white"></text>
+  </g>
+  
+  <g id="heartratecolor" class="heartratecolor3 heartrate rings" fill="#AB4545" display="none">
+    <image x="50%-16" y="55%+34" width="32" height="32" href="ico_heartm.png" fill="inherit" />
+  </g>
+  
+  
+  <!-- AutoOff -->
+  <image id="bklight" class="clockcolor1 handcolor1" x="50%-15" y="20%-30" width="31" height="31" href="bklight.png" fill="#ffffff" display="none" />
+  
+  
+ 
+  <!-- Clock -->
+  <!-- Digital Clock -->
+  <g class="clockcolor1" fill="#ffffff">
+    <text id="mystats" x="50%+65" fill="inherit"></text>
+  </g>
+  <g class="scolor1" fill="#888888">
+    <text id="mystatssec" x="50%+75" fill="inherit"></text>
+  </g>
+  <g class="clockcolor1" fill="#ffffff">
+    <text id="mystatspm" x="50%+75" fill="inherit"></text>
+  </g>
+  
+  
+  <!-- Hands -->
+  <g id="hours" pointer-events="visible" transform="translate(50%,50%)" fill="white" class="clockcolor1 handcolor1">
+    <line class="background1 backgroundface1" x1="0" y1="-29" x2="0" y2="-91" stroke-width="8" stroke-linecap="round" fill="inherit" />
+    <line x1="0" y1="0" x2="0" y2="-31" stroke-width="2" stroke-linecap="round" fill="#888888" class="clockcolor3 handcolor3"/>
+    <line x1="0" y1="-30" x2="0" y2="-90" stroke-width="6" stroke-linecap="round" fill="inherit" />
+  </g>
+  
+  <g id="minutes" pointer-events="visible" transform="translate(50%,50%)" fill="white" class="clockcolor1 handcolor1">
+    <line class="background1 backgroundface1" x1="0" y1="-29" x2="0" y2="-131" stroke-width="8" stroke-linecap="round" fill="inherit" />
+    <line x1="0" y1="0" x2="0" y2="-31" stroke-width="2" stroke-linecap="round" fill="#888888" class="clockcolor3 handcolor3"/>
+    <line x1="0" y1="-30" x2="0" y2="-130" stroke-width="6" stroke-linecap="round" fill="inherit" />
+  </g>
+  
+  <g id="seconds" pointer-events="visible" transform="translate(50%,50%)" class="scolor1" fill="red">
+    <line x1="0" y1="-130" x2="0" y2="45" stroke-width="2" fill="inherit" />
+    <arc x="-8" y="45" width="16" height="16" arc-width="2" start-angle="0" sweep-angle="360" fill="inherit" />
+    <circle cx="0" cy="0" r="4" fill="inherit"/>
+    <circle cx="0" cy="0" r="2" fill="#888888" class="clockcolor3 handcolor3"/>
+  </g>
+  
+  
+  <!-- Buttons -->
+  <circle id="top_center" cx="150" cy="0" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  <circle id="bottom_center" cx="150" cy="300" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  <circle id="right_center" cx="300" cy="150" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  <circle id="left_center" cx="0" cy="150" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  
+  <circle id="center" cx="150" cy="150" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  
+  <circle id="top_right" cx="300" cy="0" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  <circle id="top_left" cx="0" cy="0" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  <circle id="bottom_left" cx="0" cy="300" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+  <circle id="bottom_right" cx="300" cy="300" r="70" fill="#ffffff" opacity="0" pointer-events="visible" />
+</svg>
