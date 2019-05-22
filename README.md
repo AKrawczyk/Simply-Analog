@@ -13,6 +13,13 @@ Hidden Buttons;<br>
 Centre button - Cycles through watch faces.<br>
 All button choices are saved to settings<br>
 
+# Creating Watch Faces
+The watch faces are created using Grayscale Image Magic.<br>
+A template for Adobe PhotoShop has been included in the Image Template folder.<br>
+The template is deesigned to display all 60 tick locations at the correct angle.<br>
+This template can be used to know where to place the ticks on image.<br>
+This is how I created all my watch faces.<br>
+
 # Fitbit SDK
 Fitbit SDK code to settingsStorage.setItem for diffrent items.<br>
 For selects you would need to do:<br> 
