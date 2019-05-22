@@ -13,6 +13,7 @@ Hidden Buttons;<br>
 Centre button - Cycles through watch faces.<br>
 All button choices are saved to settings<br>
 
+# Fitbit SDK
 Fitbit SDK code to settingsStorage.setItem for diffrent items.<br>
 For selects you would need to do:<br> 
 settingsStorage.setItem("hourmode", JSON.stringify({"selected":[0],"values":[{"name":"24 hour mode","value":"24"}]})) ;<br>
