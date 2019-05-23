@@ -26,9 +26,13 @@ Grayscale images can be colored dynamically with the fill property. The black ar
 
 Note: The image must be 8-bit PNG format.</br>
 
-<svg></br>
-  <image width="100%" height="100%" href="hand.png" class="seconds" fill="#3fc0fc" opacity="1" /></br>
-</svg></br>
+Example Code:
+<div class="codeWrap app">
+<pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>&gt;</span></span></br>
+&lt;</span>image width="100%" height="100%" href="hand.png" class="seconds" fill="#3fc0fc" opacity="1" /</span>&gt;</span></span></br>
+&lt;/</span>svg</span>&gt;</span></span></br>
+</code></pre>
+</div>
 
 Aside from making UI more adjustable to color changes, the use of grayscale images reduces the size memory usage by a factor of 4.
 
@@ -36,7 +40,7 @@ You can generate images in the correct format by using the following;
 
  ImageMagick command: convert original.png -colorspace gray final.png
 
- Adobe Photoshop set Image Mode > Grayscale, 8 Bits/Channel.
+ Adobe Photoshop Image -> Mode -> Grayscale, 8 Bits/Channel.
 
 # Fitbit SDK
 Fitbit SDK code to settingsStorage.setItem for diffrent items.<br>
