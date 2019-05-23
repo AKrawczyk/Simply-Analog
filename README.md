@@ -26,7 +26,7 @@ Grayscale images can be colored dynamically with the fill property. The black ar
 
 Note: The image must be 8-bit PNG format.</br>
 
-Example Code:
+Example Code
 <div class="codeWrap app">
 <pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>&gt;</span></span></br>
 &lt;</span>image width="100%" height="100%" href="hand.png" class="seconds" fill="#3fc0fc" opacity="1" /</span>&gt;</span></span></br>
@@ -43,14 +43,31 @@ You can generate images in the correct format by using the following;
  Adobe Photoshop Image -> Mode -> Grayscale, 8 Bits/Channel.
 
 # Fitbit SDK
-Fitbit SDK code to settingsStorage.setItem for diffrent items.<br>
-For selects you would need to do:<br> 
-settingsStorage.setItem("hourmode", JSON.stringify({"selected":[0],"values":[{"name":"24 hour mode","value":"24"}]})) ;<br>
+Fitbit SDK code to set an item in setting/companion (settingsStorage.setItem).
+<h2>Examples for diffrent item types:</h2>
+<h3>For &lt;</span>Selects</span>&gt;</span></span> you would need to do;</h3> 
+Example Code
+<div class="codeWrap app">
+<pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">settingsStorage.setItem("hourmode", JSON.stringify({"selected":[0],"values":[{"name":"24 hour mode","value":"24"}]}));
+</code></pre>
+</div>
  
-For toggles you just set it to true or false:<br>
-settingsStorage.setItem("useweather", JSON.stringify({"value":"true"})) ;<br>
+<h3>For &lt;</span>Toggles</span>&gt;</span></span> you just set it to true or false;</h3>
+Example Code
+<div class="codeWrap app">
+<pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">settingsStorage.setItem("useweather", JSON.stringify({"value":"true"})) ;
+</code></pre>
+</div>
  
-For TextInput and Sliders you just set it like this:<br>
-settingsStorage.setItem("theKey", "any text");
-or 
-settingsStorage.setItem("sliderKey", 42;<br>
+<h3>For &lt;</span>TextInput</span>&gt;</span></span> and &lt;</span>Sliders</span>&gt;</span></span> you just set it like this;</h3>
+Example Code
+<div class="codeWrap app">
+<pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">settingsStorage.setItem("theKey", "any text");
+</code></pre>
+</div>
+or</br> 
+Example Code
+<div class="codeWrap app">
+<pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">settingsStorage.setItem("sliderKey", 42);
+</code></pre>
+</div>
