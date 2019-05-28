@@ -71,3 +71,13 @@ Example Code
 <pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">settingsStorage.setItem("sliderKey", 42);
 </code></pre>
 </div>
+
+<h2>How Fitbit watch app and phone app communicate</h2>
+<h3>Messaging</h3>
+The Messaging API provides a synchronous socket based communications channel for sending and receiving simple messages while the app is running on the device.<br><br>
+<img src="Fitbit Comunication SDK.png" width="150" hight="150"><br>
+This API has an identical implementation in the Device API and the Companion API.<br>
+
+<h3>File Transfer</h3>
+The File-Transfer API provides an asynchronous mechanism for sending/recieving binary or text files from the companion, and receiving/sending them on the device, even if the app is not currently running on the device.<br><br>
+The Companion API and Device API provide Outbox and Inbox queues to send and receive files.<br>
