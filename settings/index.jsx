@@ -1,3 +1,17 @@
+function DisplayToggle(list)
+{
+  list = list && JSON.parse(list);
+  list = list && list.selected;
+  if(list > 6)
+  {
+    return(false);
+  }
+  else
+  {
+    return(true);
+  }
+}
+
 registerSettingsPage(props => {
   return (
     <Page>
@@ -45,8 +59,9 @@ registerSettingsPage(props => {
             {color: "white", value: "white"}
           ]}
         />
-        <Text>Background Image</Text>
-        <Toggle settingsKey="BackgroundImgtheme" label="For Watchfaces 1-7" />
+        {(DisplayToggle(props.settings.faces) ?
+          <Toggle settingsKey="BackgroundImgtheme" label="Background Image" /> : null)}
+        
         <Text>Time Colour</Text>
         <ColorSelect
           settingsKey="Clocktheme"
