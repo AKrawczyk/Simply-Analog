@@ -75,7 +75,7 @@ Example Code
 <h2>How Fitbit watch app and phone app communicate</h2>
 <h3>Messaging</h3>
 The Messaging API provides a synchronous socket based communications channel for sending and receiving simple messages while the app is running on the device.<br><br>
-
+<img src="Fitbit Comunication SDK.png" width="670" hight="470">
 This API has an identical implementation in the Device API and the Companion API.<br>
 
 <h3>File Transfer</h3>
